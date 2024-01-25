@@ -1,0 +1,13 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<smont = 'http://www.jahia.org/smo/nt/1.0'>
+<smomix = 'http://www.jahia.org/smo/mix/1.0'>
+
+
+[smont:faq] > jnt:content
+ - question (string) i18n
+ - answer (string, richtext) i18n
+
+[smont:faqblock] > jnt:content, mix:title, jmix:editorialContent, jmix:structuredContent, jmix:list
+ - bannerText (string, richtext) internationalized
+ + * (smont:faq)
