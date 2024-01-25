@@ -2,11 +2,8 @@
     <img src="https://www.jahia.com/modules/jahiacom-templates/images/jahia-3x.png" alt="Jahia logo" title="Jahia" align="right" height="60" />
 </a>
 
-FAQ
+FAQ Block
 ======================
 
-Jahia faq repository
+Jahia 8 module. FAQ module with integrated bootstrap 4 accordion to display answers to questions.
 
-## Open-Source
-
-This is an Open-Source module, you can find more details about Open-Source @ Jahia [in this repository](https://github.com/Jahia/open-source).
