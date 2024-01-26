@@ -20,8 +20,10 @@
                 <p>${bannerText}</p>    
             </div>
             <div class="accordion" id="faqExample">
-                <c:forEach items="${faqItems}" var="faqItem" varStatus="faq">
-                    <template:module node="${faqItem}" editable="true"/>
+                <c:forEach items="${faqItems}" var="faqItem" varStatus="status">
+                    <template:module node="${faqItem}" editable="true">
+                        <template:param name="status" value="${status.index}"/>
+                    </template:module>
               </c:forEach>
             </div>
         </div>

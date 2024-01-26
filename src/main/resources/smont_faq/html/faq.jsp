@@ -7,6 +7,14 @@
 
 <c:set var="uuid" value="${currentNode.properties['jcr:uuid'].string}"/>
 
+<c:choose>
+  <c:when test="${status == 0}">
+    <c:set var="show" value="show"/>
+  </c:when>
+  <c:otherwise>
+    <c:set var="show" value=""/>
+  </c:otherwise>
+</c:choose>
 
 <div class="card">
     <div class="card-header p-2" id="heading${uuid}">
@@ -17,7 +25,7 @@
           </h5>
     </div>
 
-    <div id="collapse${uuid}" class="collapse" aria-labelledby="heading${uuid}" data-parent="#faqExample">
+    <div id="collapse${uuid}" class="collapse ${show}" aria-labelledby="heading${uuid}" data-parent="#faqExample">
         <div class="card-body">
             <b><fmt:message key="smont_faq.answer"/>:</b> ${currentNode.properties.answer.string}
         </div>
